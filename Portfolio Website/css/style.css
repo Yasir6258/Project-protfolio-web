@@ -193,6 +193,7 @@ section {
 	background-position: -30.2rem 0;
 }
 
+
 .home.show-animate .home-content .text-animate h3 {
 	animation: homeBgText 6s linear infinite;
 	animation-delay: 2s;
@@ -1042,5 +1043,16 @@ section:nth-child(odd) .animate.scroll,
 
 
 
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    height: 5rem;
+}
+.btn-box .btn {
+    width: auto;
+    padding: 1rem 2rem;
+}
 
-
+  

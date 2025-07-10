@@ -84,3 +84,14 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+// Rotating titles animation
+let titles = ['Web Developer', 'Artist', 'Singer'];
+let titleIndex = 0;
+let changingText = document.getElementById('changing-text');
+
+function showTitle() {
+    changingText.textContent = titles[titleIndex];
+    titleIndex = (titleIndex + 1) % titles.length;
+}
+setInterval(showTitle, 3000);
+showTitle();
