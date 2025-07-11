@@ -49,6 +49,14 @@ window.onscroll = () => {
 }
 
 
+function theme0() {
+    document.documentElement.style.setProperty('--bg-color', '#001c22');
+    document.documentElement.style.setProperty('--second-bg-color', '#003d4a');
+    document.documentElement.style.setProperty('--text-color', '#ededed');
+    document.documentElement.style.setProperty('--main-color', '#ff2d00');
+    document.documentElement.style.setProperty('--bg-image', 'url("../images/home0.jpg")');
+    document.getElementById('theme0').classList.add('selected');
+}
 function theme2() {
     document.documentElement.style.setProperty('--bg-color', '#0B0F00');
     document.documentElement.style.setProperty('--second-bg-color', '#142000');
@@ -58,25 +66,12 @@ function theme2() {
     document.getElementById('theme2').classList.add('selected');
 }
 
-function theme0() {
-    document.documentElement.style.setProperty('--bg-color', '#001c22');
-    document.documentElement.style.setProperty('--second-bg-color', '#003d4a');
-    document.documentElement.style.setProperty('--text-color', '#ededed');
-    document.documentElement.style.setProperty('--main-color', '#ff2d00');
-    document.documentElement.style.setProperty('--bg-image', 'url("../images/home0.jpg")');
-    document.getElementById('theme0').classList.add('selected');
-}
-
 
 // Function to change to theme 2
 
 // Add event listeners to theme buttons
 
-document.getElementById('theme2').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent default action
-    theme2(); // Change to theme 2
-    localStorage.setItem('selectedTheme', 'theme2');
-});
+
 
 document.getElementById('theme0').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent default action
@@ -84,7 +79,11 @@ document.getElementById('theme0').addEventListener('click', function (event) {
     localStorage.setItem('selectedTheme', 'theme0');
 });
 
-
+document.getElementById('theme2').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default action
+    theme2(); // Change to theme 2
+    localStorage.setItem('selectedTheme', 'theme2');
+});
 
 
 
@@ -119,8 +118,9 @@ function applySelectedTheme() {
     selectedButton.classList.add('selected');
   } else {
     // Apply a default theme if no theme is selected
-    theme0();
+    theme2();
+    localStorage.setItem('selectedTheme', 'theme2');
   }
 }
 
-
+applySelectedTheme();

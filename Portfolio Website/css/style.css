@@ -358,7 +358,7 @@ section {
 .heading {
 	position: relative;
 	font-size: 5rem;
-	margin-bottom: 3rem;
+	margin-bottom: 0rem;
 	text-align: center;
 }
 
@@ -498,17 +498,17 @@ span{
 }
 
 .education-content .content .year {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	color: var(--main-color);
 	padding-bottom: .5rem;
 }
 
 .education-content .content .year i{
-	padding-right: .5rem;
+	padding-right: .3rem;
 }
 
 .education-content .content h3{
-	font-size: 2rem;
+	font-size: 1.9rem;
 }
 
 .education-content .content p{
@@ -1056,3 +1056,43 @@ section:nth-child(odd) .animate.scroll,
 }
 
   
+
+
+
+
+
+
+
+
+.btn.read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 1.2rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border: 2px solid var(--main-color);
+}
+
+.btn.read-more i {
+    margin-left: 0.8rem;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.btn.read-more:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn.read-more:hover i {
+    transform: translateX(4px);
+}

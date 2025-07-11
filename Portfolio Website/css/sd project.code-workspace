@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Documents/iiuc/HTML/sd project"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html-css-js-portfolio-website-main"
+	}
+}
